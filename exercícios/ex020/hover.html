@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de como funciona o hover</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: blueviolet;
+        }
+
+        div:hover {
+            color: red;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 35px;
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+    <h1>EXEMPLOS</h1>
+    <p>Insira o mouse no texto abaixo. Uma ação irá acontecer....</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO SOMBRIO.... CUIDADO</p>
+    </div>
+    <p>Fim do Exemplooo</p>
+
+    
+    
+</body>
+</html>

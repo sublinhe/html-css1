@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    
+
+    <style>
+        /*
+        #  = id
+        .  = class
+        :  = pseudo class
+        :: = pseudo element
+        >  = clildren
+        */
+
+
+
+        body {
+            background-color: aliceblue;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            color: blueviolet;
+            font-style: italic;
+            font-weight:bold ;
+        }
+        
+        a  {
+            color: darkred;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: blueviolet;
+        }
+
+        a:hover {
+            color: black ;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: red;
+        } 
+
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            font-style: oblique;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://tsundoku.com.br/manga/mushoku-tensei-reencarnacao-do-desempregado/" target="_blank">Site com todos os capítulos da light novel de Mushoku Tensi</a></li>
+        <li><a href="https://www.youtube.com/@robertom9950" target="_blank">Meu canal no Youtube</a></li>
+        <li><a href="https://x.com/kurta_kurt4" target="_blank">Meu Twitter/X</a></li>
+       
+    </ul>
+
+    
+</body>
+</html>
