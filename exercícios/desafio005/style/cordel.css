@@ -65,20 +65,42 @@ section {
 
 }
 
+section > p {
+    padding-bottom: 2em ;
+}
+
+#img01 {
+    background-image: url('../imagens/1320360.jpeg');
+    background-position: right top;
+    
+}
+
+#img02 {
+    background-image: url('../imagens/family-rd.png');
+    background-position: center center;
+    
+}
+
 .image > p {
     padding: 5px;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.521);
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
 }
 
 .normal {
     background-color: white;
     color: black;
+    
 }
 
 .image {
     background-color:rgba(34, 34, 34, 0.678);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.534);
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 
 footer {
