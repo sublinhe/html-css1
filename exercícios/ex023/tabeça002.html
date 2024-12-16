@@ -7,11 +7,30 @@
     <style>
         body {
             font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            
+        }
+
+        caption{
+            font-size: 23px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(119, 168, 168);
+            border: 2px solid black;
+            margin: 10px;
+
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(100, 100, 100);
         }
 
         table {
             width: 600px;
             border-collapse: collapse;
+            margin: auto;
         }
 
         td, th {
@@ -19,6 +38,14 @@
             padding: 15px;
             text-align: center;
            
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(255, 255, 255);
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: rgb(182, 182, 182);
         }
         
         thead, tfoot {
@@ -29,6 +56,10 @@
             text-align: right;
         }
 
+        .dm {
+            width: 140px;
+        }
+
         
     </style>
 </head>
@@ -37,6 +68,7 @@
     <!--
     ANATOMIA PARA TABELAS GRNADES 
     TABLE
+        CAPTION
         THEAD
             TD, TR, TH
         TBODY
@@ -46,11 +78,12 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estados</th>
-                <th>População total</th>
-                <th>% da população total</th>
+                <th scope="col">Estados</th>
+                <th scope="col" class="dm">População total</th>
+                <th scope="col" class="dm">% da população total</th>
             </tr>
         </thead>
         <tbody>
@@ -122,7 +155,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td><strong>171 000 000</strong></td>
                 <td><strong>83,25%</strong></td>
             </tr>
