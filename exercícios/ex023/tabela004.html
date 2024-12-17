@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Real</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 18px;
+            text-align: center;
+            background-color: rgb(231, 145, 83);
+        }
+        
+        caption {
+            padding: 15px;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        table {
+            width: 800px;
+            border-collapse: collapse;
+            margin: auto;
+            background-color:aliceblue;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+    <table>
+        <caption>
+            Filmes favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th>Grupos</th>
+                <th>Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <th colspan="4" scope="row">Total</th>
+            <td>1000</td>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Lice Bragantino Silveira</td>
+                <td>Dragon ball Super: Broly</td>
+                <td>Mushoku</td>
+                <td>Paris six</td>
+            </tr>
+            <tr>
+                <td>Elizabeth Carlice Silva</td>
+                <td>Viajando para o espaço</td>
+                <td>Rambo</td>
+                <td>Nanatsu no Taizai</td>
+            </tr>
+            <tr>
+                <td>Sara Beltrana Siclana</td>
+                <td>Homem Formiga</td>
+                <td>Homem Formiga e Vespa</td>
+                <td>Homem Formiga: Quantumania</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Roberto Henrique Carvalho dos Santos</td>
+                <td>Vingadores</td>
+                <td>Vingadores Ultimato</td>
+                <td>Vinga Guerra Infinita</td>
+            </tr>
+            <tr>
+                <td>Pedro Emanuel</td>
+                <td>Astralis</td>
+                <td>Interestelar</td>
+                <td>Supremacia</td>
+            </tr>
+            <tr>
+                <td>Rudeus Kalman</td>
+                <td>Pequeno Chefão</td>
+                <td>Godzilla: 1888</td>
+                <td>Pinóquio: 1999</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
