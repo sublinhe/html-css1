@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de formulários</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <fieldset>
+            <legend aria-required="true">Sexo</legend>
+            <input type="radio" name="sexo" id="isexmax" value="M"><label for="sexo">Masculino</label>
+            <input type="radio" name="sexo" id="isexfem" value="F"><label for="sexo">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="esbaq" id="iesbaq"><label for="iesbaq">Basquete</label><br>
+            <input type="checkbox" name="esvolei" id="iesvolei"><label for="iesvolei">Vôlei</label><br>
+            <input type="checkbox" name="esurf" id="iesurf"><label for="iesurf">Surf</label><br>
+            <input type="checkbox" name="lol" id="ilol"><label for="ilol">League Of Legends</label>
+
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </p>
+        <h1>7 Poderes</h1>
+        <fieldset>
+            <legend>Personagens Favoritos</legend>
+            <input type="checkbox" name="alek3" id="ialek3"><label for="ialek3">Aleksander Ryback Kalman III</label><br>
+            <input type="checkbox" name="orsted" id="iorsted"><label for="iorsted">Deus Dragão Orsted</label><br>
+            <input type="checkbox" name="lutador" id="ilutador"><label for="ilutador">Rei Demonio Imortal Badigadi</label><br>
+            <input type="checkbox" name="laplace" id="ilaplace"><label for="ilaplace">Deus Dragão Demonio Laplace</label><br>
+            <input type="checkbox" name="reida" id="ireida"><label for="ireida">Reida Reia</label><br>
+            <input type="checkbox" name="gall" id="igall"><label for="igall">Gall Farion</label><br>
+            <input type="checkbox" name="rudeus" id="irudeus"><label for="irudeus">Rudeus Greyrat</label>
+        </fieldset>
+    </form>
+</body>
+</html>
