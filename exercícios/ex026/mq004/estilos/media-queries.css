@@ -67,3 +67,17 @@ Desktops grandes	        1441px ou mais
     #tv {display: block;}
     #tab {display: none;}
 }
+
+@media screen and (min-width:1900px){ /*GRANDE TELAS*/
+    body {
+        background-image:url(../imagens/1151772.jpg);
+    }
+
+    #cel {display: none;}
+    #imp{display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+    #tab {display: none;}
+    #mega-tv {display: block;}
+}
+
