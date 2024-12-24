@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/*Todas as demais mídias*/
+/* 
+Typical Device Breakpoints
+------------------------------
+Smartphones (portrait)	    até 480px
+Smartphones (landscape)	    481px - 768px
+Tablets	                    768px - 1024px
+Laptops	                    1025px - 1440px
+Desktops grandes	        1441px ou mais
+*/
+
+@media print { /*IMPRESSORAS*/
+    body {
+        background-image: url(../imagens/back-print.jpg);
+
+    }
+
+    main h1 {
+        color: black;
+    }
+    
+    main {
+      border: 2px solid black;
+    }
+
+    #cel {display: none;}
+    #imp{display: block;}
+    #pc {display: none;}
+    #tv {display: none;}
+    #tab {display:none;}
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){ /*TABLET*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #cel {display: none;}
+    #imp{display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+    #tab {display: block;}
+}
+
+@media screen and (min-width:1025px) and (max-width:1440px){ /*DESKTOP*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #cel {display: none;}
+    #imp{display: none;}
+    #pc {display: block;}
+    #tv {display: none;}
+    #tab {display: none;}
+}
+
+@media screen and (min-width:1441px){ /*GRANDE TELAS*/
+    body {
+        background-image:url(../imagens/back-tv.jpg);
+    }
+
+    #cel {display: none;}
+    #imp{display: none;}
+    #pc {display: none;}
+    #tv {display: block;}
+    #tab {display: none;}
+}
