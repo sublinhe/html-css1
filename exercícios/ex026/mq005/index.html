@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Mushoku Tensei</h1>
+        <i id="bg" class="material-icons" onclick="clickShowMenu()">list</i>
+        <menu id="menup">
+            <ul>
+                <li><a href="#">Universo</a></li>
+                <li><a href="#">Personagens</a></li>
+                <li><a href="#">Protagonistas</a></li>
+                <li><a href="#">Vilões</a></li>
+                <li><a href="#">História</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Estilo Deus do Norte</h2> <!--Testando Media Queries-->
+            <h3>Características</h3>
+            <p>O foco principal deste estilo não está em técnicas ou no desenvolvimento de especialidades, mas sim em um método para se manter vivo e enfrentar uma batalha com maiores chances de vitória. Depende muito da adaptabilidade do praticante e do uso do ambiente. Como resultado, esse estilo envolve o uso de muitos truques em vez de técnicas refinadas.</p>
+            <p>É um estilo utilitário de esgrima que inclui técnicas de luta não relacionadas à espada, como primeiros socorros e rastreamento, bem como a habilidade de lutar mesmo com deficiência física. Devido a isso, diferentes instituições de ensino têm abordagens diferentes para a batalha e os praticantes têm estilos de luta muito díspares. Os praticantes podem usar espadas duplas ou usar armas que não sejam espadas, como machados de batalha e cajados.</p>
+            <p>Devido ao seu estilo que gira em torno da adaptabilidade da situação e da luta usando truques, eles são um contra-ataque difícil para o estilo Water God porque a maioria de seus truques peculiares são difíceis de aparar ou contra-atacar. Ao mesmo tempo, este estilo é fraco contra o estilo Sword God devido ao último ser um estilo direto que pretende dominar os oponentes antes de ser dominado.</p>
+            <p>Muitos aventureiros e mercenários aprendem o Estilo Deus do Norte por sua versatilidade necessária em campos de batalha e situações imprevisíveis.</p>
+            <h2>Técnicas conhecidas</h2>
+            <p>As técnicas do Estilo Deus do Norte são exclusivas para seu usuário, exceto por uma série de técnicas fundamentais.</p>
+            <h3>Técnicas de lançamento de espada</h3>
+            <p>Técnicas de lançamento de espada: Quando um Espadachim do Estilo Deus do Norte é encurralado ou imobilizado, ele lançará sua espada. A espada é lançada em alta velocidade com a lâmina girando violentamente. Esta técnica tem ímpeto suficiente para cortar bolas de fogo mágicas. Durante a batalha de Eris contra Orsted, ela usa outra variante da técnica de lançamento de espadas que ela testemunhou uma vez em Auber. Ela treinou para tirar uma espada da bainha com uma mão o mais rápido possível.<p>
+            <h3>Cruz nebulosa</h3>
+            <p>Hazy Cross (朧十文字 Oboro Jūmonji): No momento em que ambas as espadas são balançadas e bloqueadas, o usuário as joga fora e desembainha a espada restante para parar o inimigo através de uma lacuna na defesa do inimigo.</p>
+            <p>Usado por Auber Corvette</p>
+            <h3>Bala de lágrima</h3>
+            <p>Teardrop Bullet (落涙弾 Rakurui-dan): Envolve jogar um saco cheio de especiarias em pó no inimigo.</p>
+    </main>
+
+    <script>
+        function clickShowMenu(){
+
+        if (menup.style.display == 'block'){
+              menup.style.display = 'none'
+        } else {
+            menup.style.display = 'block'
+        }
+        
+    }
+    </script>
+</body>
+</html>
