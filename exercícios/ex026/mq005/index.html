@@ -6,8 +6,9 @@
     <title>Media queries</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mq.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <img id="logo" src="imagens/logo.png" alt="logo mushoku tensei">
         <i id="bg" class="material-icons" onclick="clickShowMenu()">list</i>
@@ -41,6 +42,7 @@
     </main>
 
     <script>
+
         function clickShowMenu(){
 
         if (menup.style.display == 'block'){
@@ -49,6 +51,14 @@
             menup.style.display = 'block'
         }
         
+    }
+
+    function mudouTamanho() {
+         if (window.innerWidth >= 768) {
+            menup.style.display = 'block'
+         } else {
+            menup.style.display = 'none'
+         }
     }
     </script>
 </body>

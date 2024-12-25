@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* 
+Typical Device Breakpoints
+------------------------------
+Smartphones (portrait)	    até 480px
+Smartphones (landscape)	    481px - 768px
+Tablets	                    768px - 1024px
+Laptops	                    1025px - 1440px
+Desktops grandes	        1441px ou mais
+*/
+
+@media screen and (min-width:768px) {
+    #bg {
+        display: none;
+    }
+    
+    menu {
+        display: block;
+    }
+
+    menu li {
+        display: inline-block;
+    }
+
+    main {
+        width: 900px;
+    }
+}
