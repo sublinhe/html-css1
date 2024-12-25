@@ -25,12 +25,13 @@ body, html {
 }
 
 header {
-    background-color: rgba(231, 159, 65, 0.774);
+    background-color: rgba(189, 158, 117, 0.774);
 }
 
-header > h1 {
-    color: brown;
-    font-size: 54px;
+header > #logo {
+    display: block;
+    margin: auto;
+    width: 300px;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 30px;
