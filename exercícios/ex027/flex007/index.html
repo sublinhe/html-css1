@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        body {
+            background-color: rgb(94, 66, 119);
+            color: rgb(25, 27, 29);
+        }
+        
+        .container {
+            background-color: goldenrod;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .item {
+            background-color: aquamarine;
+            border: 2px solid black;
+            flex: auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #p1 {
+            order: 0;
+        }
+
+        #p2 {
+            order: 6;
+        }
+
+        #p3 {
+            order: 5;
+        }
+
+        #p4 {
+            order: -5;
+        }
+
+        #p5 {
+            order: -6;
+        }
+
+        #p6 {
+            order: 2;
+        }
+
+        #p7 {
+            order: -5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="p1">Aleksander</div>
+        <div class="item" id="p2">Orsted</div>
+        <div class="item" id="p3">Rudeus</div>
+        <div class="item" id="p4">Laplace</div>
+        <div class="item" id="p5">Hitogami</div>
+        <div class="item" id="p6">Ruijerd</div>
+        <div class="item" id="p7">Eris</div>
+    </div>
+</body>
+</html>
