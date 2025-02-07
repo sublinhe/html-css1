@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        body {
+            background-color: rgb(94, 66, 119);
+            color: rgb(25, 27, 29);
+        }
+        
+        .container {
+            background-color: goldenrod;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item {
+            background-color: aquamarine;
+            border: 2px solid black;
+            text-align: center;
+            flex-basis:250px ;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        #cxa {
+           flex-shrink: 1;
+           flex-grow: 0; 
+        }
+
+        #cxb {
+            flex-shrink: 1;
+            flex-grow: 1 ; 
+        }
+
+        #cxc {
+            flex-shrink:8 ;
+            flex-grow:1 ; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="cxa">Aleksander</div>
+        <div class="item" id="cxb">Orsted</div>
+        <div class="item" id="cxc">Laplace</div>
+    
+    </div>
+</body>
+</html>
